@@ -172,6 +172,7 @@ public class SpringjdbcApplication implements CommandLineRunner {
 		System.out.println("Introduzca su fecha de Nacimiento: ");
 		LocalDate fechaNacimiento = LocalDate.parse(entrada.nextLine());
 
+		
 		dao.agregar(new Cliente(null, nombre, apellidos, cif, fechaNacimiento));
 
 		// dao.agregar(new Cliente(null, "Marcio", "de Souza", "13243545Z",
